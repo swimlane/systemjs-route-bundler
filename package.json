@@ -1,6 +1,6 @@
 {
 	"name": "systemjs-route-bundler",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "lib/builder.js",
 	"dependencies": {
 		"gulp": "^3.8.10",
