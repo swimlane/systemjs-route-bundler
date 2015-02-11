@@ -1,23 +1,26 @@
 {
-	"name": "systemjs-route-bundler",
-	"description": "SystemJS Route-Driven Bundler",
-	"version": "1.0.3",
-	"main": "lib/builder.js",
-	"license": "MIT",
-	"dependencies": {
-		"gulp": "^3.8.10",
-		"gulp-insert": "^0.4.0",
-		"systemjs-builder": "^0.7.4",
-		"rsvp": "^3.0.16",
-		"node-v8-clone": "^0.6.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Swimlane/systemjs-route-bundler.git"
-	},
-	"keywords": [
-		"systemjs",
-		"route",
-		"bundler"
-	]
+  "name": "systemjs-route-bundler",
+  "description": "SystemJS Route-Driven Bundler",
+  "version": "1.0.3",
+  "main": "lib/builder.js",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-insert": "^0.4.0",
+    "systemjs-builder": "^0.7.4",
+    "rsvp": "^3.0.16",
+    "node-v8-clone": "^0.6.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swimlane/systemjs-route-bundler.git"
+  },
+  "keywords": [
+    "systemjs",
+    "route",
+    "bundler"
+  ]
 }
