@@ -6,7 +6,7 @@
 		"gulp": "^3.8.10",
 		"gulp-insert": "^0.4.0",
 		"gulp-6to5": "^3.0.0",
-		"systemjs-builder": "^0.7.2",
+		"systemjs-builder": "^0.7.4",
 		"rsvp": "^3.0.16",
 		"node-v8-clone": "^0.6.2"
 	}
