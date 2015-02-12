@@ -1,4 +1,4 @@
-# SystemJS Route Bundle Builder
+# SystemJS Route Bundle Builder [![Build Status](https://travis-ci.org/Swimlane/systemjs-route-bundler.svg?branch=master)](https://travis-ci.org/Swimlane/systemjs-route-bundler)
 
 Magical code to split your systemjs project into bundles based on the app routes.
 
