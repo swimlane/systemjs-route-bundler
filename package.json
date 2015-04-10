@@ -5,14 +5,16 @@
   "main": "lib/builder.js",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.8.10",
+    "gulp": "^3.8.11",
     "gulp-insert": "^0.4.0",
     "systemjs-builder": "^0.7.4",
-    "rsvp": "^3.0.16",
+    "rsvp": "^3.0.18",
     "node-v8-clone": "^0.6.2"
   },
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "babel": "^5.0.7",
+    "babel-runtime": "^5.0.7",
+    "mocha": "^2.2.1"
   },
   "repository": {
     "type": "git",
