@@ -24,5 +24,8 @@
     "systemjs",
     "route",
     "bundler"
-  ]
+  ],
+  "scripts": {
+    "test": "babel test/fixtures/app --out-dir test/output/app --modules system && mocha --compilers js:babel/register test/**/*.spec.js"
+  }
 }
