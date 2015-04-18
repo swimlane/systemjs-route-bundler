@@ -25,7 +25,7 @@ var elem3 = createElement('elem3', elem1)  // |   └── elem3
 var elem4 = createElement('elem4', elem3)  // |       └── elem4
 var elem5 = createElement('elem5', root)   // └── elem5
 
-describe('nca', function() {
+describe('nearest-common-ancestor', function() {
   it('has the same parent', function() {
     assert(nearestCommonAncestor.nca([elem1, elem5]) === root);
   })
