@@ -7,14 +7,14 @@
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-insert": "^0.4.0",
-    "systemjs-builder": "^0.10.4",
+    "systemjs-builder": "^0.10.6",
     "rsvp": "^3.0.18",
     "node-v8-clone": "^0.6.2"
   },
   "devDependencies": {
-    "babel": "^5.0.7",
-    "babel-runtime": "^5.0.7",
-    "mocha": "^2.2.1"
+    "babel": "^5.1.13",
+    "babel-runtime": "^5.1.13",
+    "mocha": "^2.2.4"
   },
   "repository": {
     "type": "git",
