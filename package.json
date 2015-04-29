@@ -26,6 +26,6 @@
     "bundler"
   ],
   "scripts": {
-    "test": "rm -rf test/output && babel test/fixtures/app --out-dir test/output/app --modules system && mocha --compilers js:babel/register test/**/*.spec.js"
+    "test": "test/run.sh"
   }
 }
