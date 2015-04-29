@@ -22,7 +22,7 @@ let config = {
 	routes: routesSrc,
 	bundleThreshold: 2.0,
 	config: 'test/fixtures/system.config.js',
-	sourceMaps: false,
+	sourceMaps: true,
 	minify: false,
 	dest: 'test/output',
 	destJs: 'test/output/app.js'
