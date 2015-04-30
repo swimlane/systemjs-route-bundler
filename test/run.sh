@@ -12,4 +12,4 @@ fi
 
 babel test/fixtures/app --out-dir test/output/app --modules system
 
-mocha --compilers js:babel/register test/**/*.spec.js
+mocha --timeout 5000 --compilers js:babel/register test/**/*.spec.js
