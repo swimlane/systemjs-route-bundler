@@ -1,4 +1,4 @@
-import Util from 'app/common/util';
+import angular from 'angular';
 
 export default class App {
 

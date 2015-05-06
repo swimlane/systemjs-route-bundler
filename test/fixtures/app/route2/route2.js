@@ -1,5 +1,5 @@
 import App from '../app';
-import Common from '../common/common';
+import Util from '../common/util';
 
 export default class Route2 {
   constructor() {

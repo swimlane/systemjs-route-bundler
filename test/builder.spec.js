@@ -20,9 +20,9 @@ let config = {
 	baseURL: 'test/output/',
 	main: 'app/app',
 	routes: routesSrc,
-	bundleThreshold: 0.6,
+	bundleThreshold: 2.0,
 	config: 'test/fixtures/system.config.js',
-	sourceMaps: false,
+	sourceMaps: true,
 	minify: false,
 	dest: 'test/output',
 	destJs: 'test/output/app.js'
