@@ -1,7 +1,7 @@
 {
   "name": "systemjs-route-bundler",
   "description": "SystemJS Route-Driven Bundler",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "main": "lib/builder.js",
   "license": "MIT",
   "dependencies": {
@@ -14,7 +14,7 @@
   "devDependencies": {
     "babel": "^5.1.13",
     "babel-runtime": "^5.1.13",
-    "jspm": "^0.15.5",
+    "jspm": "^0.16.0-beta.3",
     "mocha": "^2.2.4"
   },
   "repository": {
