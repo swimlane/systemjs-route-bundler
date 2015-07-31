@@ -19,6 +19,24 @@ This would give you 5 separate .js files (3 for the routes and 2 for the depende
 
 By pairing things with the [ocLazyLoad SystemJS Router](https://github.com/lookfirst/ocLazyLoad-SystemJS-Router), as users click around in your app and load routes, the related files for those routes are lazy loaded as needed. This cuts down on initial application load times.
 
+### Configuration
+
+Check the [AngularJS + SystemJS seed](https://github.com/Swimlane/angular-systemjs-seed/blob/master/gulpfile.js#L230) project for an example configuration.
+
+Option  | Description
+------------- | -------------
+dest  | Destination folder for the output
+main  | The main file of your application
+destMain | The destination folder of your main file
+routes | An array of the file names of the main routes of your project. Each of the routes will have its own bundle
+bundleThreshold | The ratio of routes including a module over which the module will be bundled in the main bundle. Value must been between 0 and 1. 0.6 means that if 60% of the routes contain a single module, that module will be bundled in the main bundle
+systemConfig | Path to the systemjs config file
+sourceMaps | Build sourceMaps for the bundles
+minify | Minify the javascript
+mangle | Mangle javascript variables
+verboseOutput | Output debug information while tracing and bundling
+ignoredPaths | Paths that will not be bundled. Put all paths that contain external libraries here
+
 ### Used by
 
 * [AngularJS + SystemJS seed](https://github.com/swimlane/angular-systemjs-seed)
