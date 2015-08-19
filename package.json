@@ -8,7 +8,9 @@
     "gulp": "^3.8.11",
     "gulp-insert": "^0.4.0",
     "systemjs-builder": "0.13.0",
-    "rsvp": "^3.0.18",
+    "rsvp": "^3.0.18"
+  },
+  "optionalDependencies": {
     "node-v8-clone": "^0.6.2"
   },
   "devDependencies": {
