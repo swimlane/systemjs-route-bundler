@@ -1,14 +1,16 @@
 {
   "name": "systemjs-route-bundler",
   "description": "SystemJS Route-Driven Bundler",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "main": "lib/builder.js",
   "license": "MIT",
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-insert": "^0.4.0",
     "systemjs-builder": "^0.10.4",
-    "rsvp": "^3.0.18",
+    "rsvp": "^3.0.18"
+  },
+  "optionalDependencies": {
     "node-v8-clone": "^0.6.2"
   },
   "devDependencies": {
