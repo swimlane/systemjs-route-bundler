@@ -1,7 +1,7 @@
 {
   "name": "systemjs-route-bundler",
   "description": "SystemJS Route-Driven Bundler",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "main": "lib/builder.js",
   "license": "MIT",
   "dependencies": {
