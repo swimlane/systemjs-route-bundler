@@ -1,6 +1,6 @@
-# SystemJS Route Bundle Builder [![Build Status](https://travis-ci.org/Swimlane/systemjs-route-bundler.svg?branch=master)](https://travis-ci.org/Swimlane/systemjs-route-bundler) [![Codacy Badge](https://www.codacy.com/project/badge/c33f4b50d38b477b926c5b0d462d9317)](https://www.codacy.com/public/amcdaniel2/systemjs-route-bundler)
+# SystemJS Route Bundle Builder [![Codacy Badge](https://www.codacy.com/project/badge/c33f4b50d38b477b926c5b0d462d9317)](https://www.codacy.com/public/amcdaniel2/systemjs-route-bundler)
 
-Magical code to split your systemjs project into bundles based on singple-page application top level routes. [SystemJS builder](https://github.com/systemjs/builder) is used under the covers.
+Magical code to split your SystemJS project into bundles based on singple-page application top level routes. [SystemJS builder](https://github.com/systemjs/builder) is used under the covers.
 
 Instead of generating a single giant .js file for your entire application, you get one .js file per route and potentially one more file per route that contains shared dependencies.
 
