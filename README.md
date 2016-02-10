@@ -25,6 +25,7 @@ Check the [AngularJS + SystemJS seed](https://github.com/Swimlane/angular-system
 
 Option  | Description
 ------------- | -------------
+baseURL | Base URL of the project
 dest  | Destination folder for the output
 main  | The main file of your application
 destMain | The destination folder of your main file
