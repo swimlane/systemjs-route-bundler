@@ -1,5 +1,4 @@
-# SystemJS Route Bundle Builder [![Codacy Badge](https://www.codacy.com/project/badge/c33f4b50d38b477b926c5b0d462d9317)](https://www.codacy.com/public/amcdaniel2/systemjs-route-bundler) [![Dependency Status](https://david-dm.org/Swimlane/systemjs-route-bundler.svg)](https://david-dm.org/Swimlane/systemjs-route-bundler)
-[![devDependency Status](https://david-dm.org/Swimlane/systemjs-route-bundler/dev-status.svg)](https://david-dm.org/Swimlane/systemjs-route-bundler#info=devDependencies)
+# SystemJS Route Bundle Builder [![Codacy Badge](https://www.codacy.com/project/badge/c33f4b50d38b477b926c5b0d462d9317)](https://www.codacy.com/public/amcdaniel2/systemjs-route-bundler) [![Dependency Status](https://david-dm.org/Swimlane/systemjs-route-bundler.svg)](https://david-dm.org/Swimlane/systemjs-route-bundler) [![devDependency Status](https://david-dm.org/Swimlane/systemjs-route-bundler/dev-status.svg)](https://david-dm.org/Swimlane/systemjs-route-bundler#info=devDependencies)
 
 Magical code to split your SystemJS project into bundles based on singple-page application top level routes. [SystemJS builder](https://github.com/systemjs/builder) is used under the covers.
 
