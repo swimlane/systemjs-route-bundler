@@ -31,7 +31,8 @@ main  | The main file of your application
 destMain | The destination folder of your main file
 routes | An array of the file names of the main routes of your project. Each of the routes will have its own bundle
 bundleThreshold | The ratio of routes including a module over which the module will be bundled in the main bundle. Value must been between 0 and 1. 0.6 means that if 60% of the routes contain a single module, that module will be bundled in the main bundle
-systemConfig | Path to the systemjs config file
+jspmConfigPath | Path to the systemjs config file
+jspmBrowserPath | Path to the systemjs browser config file
 sourceMaps | Build sourceMaps for the bundles
 minify | Minify the javascript
 mangle | Mangle javascript variables
