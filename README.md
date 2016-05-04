@@ -1,27 +1,18 @@
-# SystemJS Route Bundle Builder [![Codacy Badge](https://www.codacy.com/project/badge/c33f4b50d38b477b926c5b0d462d9317)](https://www.codacy.com/public/amcdaniel2/systemjs-route-bundler) [![Dependency Status](https://david-dm.org/Swimlane/systemjs-route-bundler.svg)](https://david-dm.org/Swimlane/systemjs-route-bundler) [![devDependency Status](https://david-dm.org/Swimlane/systemjs-route-bundler/dev-status.svg)](https://david-dm.org/Swimlane/systemjs-route-bundler#info=devDependencies)
+# SystemJS Route Bundle Builder
 
-Magical code to split your SystemJS project into bundles based on singple-page application top level routes. [SystemJS builder](https://github.com/systemjs/builder) is used under the covers.
+A build tool for [SystemJS Builder](https://github.com/systemjs/builder) that will identify your routes and build seperate JS files for each. Bundling isn't a new concept but with a large applications you have quite a bit of overlap of components between your routes. Typically those bundles would just be looped up into the main momdule. Our bundler is unique in the fact that it identifies potential optimizations and creates micro-bundles. So lets take a look at:
 
-Instead of generating a single giant .js file for your entire application, you get one .js file per route and potentially one more file per route that contains shared dependencies.
+![example](http://content.screencast.com/users/amcdaniel22/folders/Snagit/media/c9b6f0fc-b592-49fd-b568-75af3a9fd0bd/2016-05-04_09-28-39.png)
 
-Imagine that you have 3 routes that each import two different dependencies. 2 routes share the same dependency.
+We can see that the Modal component is used by Login and Profile but not by Admin. We can also see that Select is used by all the modules. The most optimal way to download this module graph would be to only download Modal when Login or Profile is requested. But you don't want to include it in the main download nor do you want to include it twice in each module. Our bundler identifies the overlap and creates a new module that is shared between those. So the above example results in something like:
 
-```
-/route1
-  /dependency1
-/route2
-  /dependency1
-/route3
-  /dependency2
-```
+![result](http://content.screencast.com/users/amcdaniel22/folders/Snagit/media/ca5ffd36-e242-492b-83d4-6997e73b3d9d/2016-05-04_09-37-31.png)
 
-This would give you 5 separate .js files (3 for the routes and 2 for the dependencies). Two routes both share a dependency, therefore loading /route2 would only load one file if /route1 has already loaded (thanks to browser caching).
+This bundler can work with ANY platform, all you need is a route definition and to use SystemJS. At Swimlane we use Angular 1.x in our production application, so we wanted to make it work nicely with Angular. So we created a demo [AngularJS + SystemJS seed project](https://github.com/swimlane/angular-systemjs-seed) that demonstrates this!
 
-By pairing things with the [ocLazyLoad SystemJS Router](https://github.com/lookfirst/ocLazyLoad-SystemJS-Router), as users click around in your app and load routes, the related files for those routes are lazy loaded as needed. This cuts down on initial application load times.
+In short, the bundler can cut your inital load time to tenths of what it is now without having to manage your bundle definitions!
 
 ### Configuration
-
-Check the [AngularJS + SystemJS seed](https://github.com/Swimlane/angular-systemjs-seed/blob/master/gulpfile.js#L230) project for an example configuration.
 
 Option  | Description
 ------------- | -------------
@@ -39,10 +30,7 @@ mangle | Mangle javascript variables
 verboseOutput | Output debug information while tracing and bundling
 ignoredPaths | Paths that will not be bundled. Put all paths that contain external libraries here
 
-### Used by
-
-* [AngularJS + SystemJS seed](https://github.com/swimlane/angular-systemjs-seed)
-* [SystemJS + Angular + React seed](https://github.com/lookfirst/systemjs-seed)
+Check the [AngularJS + SystemJS seed](https://github.com/Swimlane/angular-systemjs-seed/blob/master/gulpfile.js#L230) project for an example configuration.
 
 ### Credits
 
