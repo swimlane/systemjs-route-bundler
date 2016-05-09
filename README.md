@@ -1,6 +1,10 @@
 # SystemJS Route Bundle Builder
 
-A build tool for [SystemJS Builder](https://github.com/systemjs/builder) that will identify your routes and build seperate JS files for each. Bundling isn't a new concept but with a large applications you have quite a bit of overlap of components between your routes. Typically those bundles would just be looped up into the main momdule. Our bundler is unique in the fact that it identifies potential optimizations and creates micro-bundles. So lets take a look at:
+A build tool for [SystemJS Builder](https://github.com/systemjs/builder) that will identify your routes and build separate JS files for each.
+
+### Concept
+
+Bundling isn't a new concept but with a large applications you have quite a bit of overlap of components between your routes. Typically those bundles would just be looped up into the main momdule. Our bundler is unique in the fact that it identifies potential optimizations and creates micro-bundles. So lets take a look at:
 
 ![example](https://raw.githubusercontent.com/swimlane-contrib/systemjs-route-bundler/master/assets/tree.png)
 
@@ -10,7 +14,7 @@ We can see that the Modal component is used by Login and Profile but not by Admi
 
 This bundler can work with ANY platform, all you need is a route definition and to use SystemJS. At Swimlane we use Angular 1.x in our production application, so we wanted to make it work nicely with Angular. So we created a demo [AngularJS + SystemJS seed project](https://github.com/swimlane/angular-systemjs-seed) that demonstrates this!
 
-In short, the bundler can cut your inital load time to tenths of what it is now without having to manage your bundle definitions!
+In short, the bundler can cut your initial load time to tenths of what it is now without having to manage your bundle definitions!
 
 ### Configuration
 
