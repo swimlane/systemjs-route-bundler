@@ -2,11 +2,11 @@
 
 A build tool for [SystemJS Builder](https://github.com/systemjs/builder) that will identify your routes and build seperate JS files for each. Bundling isn't a new concept but with a large applications you have quite a bit of overlap of components between your routes. Typically those bundles would just be looped up into the main momdule. Our bundler is unique in the fact that it identifies potential optimizations and creates micro-bundles. So lets take a look at:
 
-![example](https://raw.githubusercontent.com/swimlane/swimlane-python/master/assets/tree.png)
+![example](https://raw.githubusercontent.com/swimlane-contrib/systemjs-route-bundler/master/assets/tree.png)
 
 We can see that the Modal component is used by Login and Profile but not by Admin. We can also see that Select is used by all the modules. The most optimal way to download this module graph would be to only download Modal when Login or Profile is requested. But you don't want to include it in the main download nor do you want to include it twice in each module. Our bundler identifies the overlap and creates a new module that is shared between those. So the above example results in something like:
 
-![result](https://raw.githubusercontent.com/swimlane/swimlane-python/master/assets/result.png)
+![result](https://raw.githubusercontent.com/swimlane-contrib/systemjs-route-bundler/master/assets/result.png)
 
 This bundler can work with ANY platform, all you need is a route definition and to use SystemJS. At Swimlane we use Angular 1.x in our production application, so we wanted to make it work nicely with Angular. So we created a demo [AngularJS + SystemJS seed project](https://github.com/swimlane/angular-systemjs-seed) that demonstrates this!
 
