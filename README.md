@@ -8,7 +8,7 @@ Bundling isn't a new concept but with a large applications you have quite a bit 
 
 ![example](https://raw.githubusercontent.com/swimlane-contrib/systemjs-route-bundler/master/assets/tree.png)
 
-We can see that the Modal component is used by Login and Profile but not by Admin. We can also see that Select is used by all the modules. The most optimal way to download this module graph would be to only download Modal when Login or Profile is requested. But you don't want to include it in the main download nor do you want to include it twice in each module. Our bundler identifies the overlap and creates a new module that is shared between those. So the above example results in something like:
+We can see that the `Modal` component is used by `Login` and `Profile` but not by `Admin`. We can also see that `Select` is used by all the modules. The most optimal way to download this module graph would be to only download `Modal` when `Login` or `Profile` is requested. But you don't want to include it in the main download nor do you want to include it twice in each module. Our bundler identifies the overlap and creates a new module that is shared between those. So the above example results in something like:
 
 ![result](https://raw.githubusercontent.com/swimlane-contrib/systemjs-route-bundler/master/assets/result.png)
 
