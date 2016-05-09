@@ -12,7 +12,7 @@ We can see that the Modal component is used by Login and Profile but not by Admi
 
 ![result](https://raw.githubusercontent.com/swimlane-contrib/systemjs-route-bundler/master/assets/result.png)
 
-This bundler can work with ANY platform, all you need is a route definition and to use SystemJS. At Swimlane we use Angular 1.x in our production application, so we wanted to make it work nicely with Angular. So we created a demo [AngularJS + SystemJS seed project](https://github.com/swimlane-contrib/angular-systemjs-seed) that demonstrates this!
+This bundler can work with ANY platform, all you need is a route definition and to use SystemJS. At Swimlane we use Angular 1.x in our production application, so we wanted to make it work nicely with Angular. So we created a demo [AngularJS + SystemJS seed project](https://github.com/swimlane-contrib/angular1-systemjs-seed) that demonstrates this!
 
 In short, the bundler can cut your initial load time to tenths of what it is now without having to manage your bundle definitions!
 
@@ -34,7 +34,7 @@ mangle | Mangle javascript variables
 verboseOutput | Output debug information while tracing and bundling
 ignoredPaths | Paths that will not be bundled. Put all paths that contain external libraries here
 
-Check the [AngularJS + SystemJS seed](https://github.com/swimlane-contrib/angular-systemjs-seed/blob/master/gulpfile.js#L230) project for an example configuration.
+Check the [AngularJS + SystemJS seed](https://github.com/swimlane-contrib/angular1-systemjs-seed/blob/master/gulpfile.js#L230) project for an example configuration.
 
 ### Credits
 
